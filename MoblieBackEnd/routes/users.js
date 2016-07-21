@@ -26,11 +26,12 @@ router.get('/',function(req, res, next){
   //res.render('count',counts)
   //res.json(counts);
 
-  Count.find({},function(err,counts){
+  Lanking.find({},function(err,counts){
     if(err){
       return next(err);
     }
-    res.render('count',{counts: counts});
+    //console.log(counts.length);
+    res.render('users',{counts: counts});
   });
 
 

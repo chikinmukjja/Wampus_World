@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USERS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>User List</h1>
+<p>
+    Index|ID|Time|score
+</p>
+<%for(var i =0;i<counts.length;i++) {%>
+     <li> <%= i+1 %> | <%= counts[i].id %> |  <%= counts[i].time %> |  <%= counts[i].score %> </li>
+       <%}%>
+</body>
+</html>
