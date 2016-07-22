@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 
 var lankingSchema = new Schema({
     id: String,
+    name:String,
     time: String,
     score: Number
 });
