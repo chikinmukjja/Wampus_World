@@ -51,6 +51,7 @@ router.post('/',function(req, res){
 
   var newLanking = new Lanking({
     id: req.body.id,
+    name: req.body.name,
     time: req.body.time,
     score: req.body.score,
   });
