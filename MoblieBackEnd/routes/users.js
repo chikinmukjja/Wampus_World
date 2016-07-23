@@ -31,7 +31,8 @@ router.get('/',function(req, res, next){
       return next(err);
     }
     //console.log(counts.length);
-    res.render('users',{counts: counts});
+    res.json(counts)
+    //res.render('users',{counts: counts});
   });
 
 
