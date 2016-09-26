@@ -28,7 +28,7 @@ app.use('/users', users);
 
 
 //db 접속 로그인 처리
-mongoose.connect('mongodb://chikinmukjja:qkrwnsdn92!@ds045882.mlab.com:45882/wampusworld');
+mongoose.connect('mongodb://아이디:비밀번호@ds045882.mlab.com:45882/wampusworld');
 mongoose.connection.on('error',console.log);
 
 // catch 404 and forward to error handler
